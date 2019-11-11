@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap-4.3.1.css">
+
+  <!-- Esto aparece como título de la ventana o pestaña en el navegador: cámbialo -->
+  <title>Garabato</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- nombre del sitio; es un enlace que lleva a la página ppal -->
+    <a class="navbar-brand" href="#">GARABATO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="mensaje-responder.html">Correo</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Buscar</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Administrar
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Alumnos y Responsables</a>
+            <a class="dropdown-item" href="#">Clases y Profesores</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    
+    <div class="row">
+      <div class="col">
+        <label for="inputTitulo"><h3>Base de Datos de Alumnos</h3></label>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <form action="">
+          <div class="input-group mb-4">
+            <input type="search" placeholder="Buscar alumno" aria-describedby="button-addon5" class="form-control">
+            <div class="input-group-append">
+              <button id="button-addon5" type="submit" class="btn btn-primary">🔎</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="row">
+
+          <div class="col-md-3">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 1º
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> A
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> B
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> C
+            </label>
+          </div>
+
+          <div class="col-md-3">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 2º
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> A
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> B
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> C
+            </label>
+          </div>
+
+        </div>
+        
+        <div class="row">
+
+          <div class="col-md-3">
+
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 3º
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> A
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> B
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> C
+            </label>
+          </div>
+
+          <div class="col-md-3">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 4º
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> A
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> B
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> C
+            </label>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table" id="gente">
+          <thead>
+            <tr>
+              <th>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">
+                </label>
+              </th>
+              <th>Nombre y Apellidos</th>
+              <th>Clase</th>
+              <th>Responsable</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">
+                </label>
+              </td>
+              <td>John Lennon</td>
+              <td>1ºA</td>
+              <td>Responsable 1</td>
+              <td>
+                <div class="btn-group" role="group" aria-label="options">
+                  <button type="button" class="btn btn-default">👁</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal"
+                    data-target="#modalSeleccionCategoria">➕</button>
+                  <button type="button" class="btn btn-default">➖</button>
+                  <button type="button" class="btn btn-default">✉</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">
+                </label>
+              </td>
+              <td>Paul McCartney</td>
+              <td>1ºA</td>
+              <td>Responsable 1</td>
+              <td>
+                <div class="btn-group" role="group" aria-label="options">
+                  <button type="button" class="btn btn-default">👁</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal"
+                    data-target="#modalSeleccionCategoria">➕</button>
+                  <button type="button" class="btn btn-default">➖</button>
+                  <button type="button" class="btn btn-default">✉</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">
+                </label>
+              </td>
+              <td>George Harrison</td>
+              <td>2ºB</td>
+              <td>Responsable 1</td>
+              <td>
+                <div class="btn-group" role="group" aria-label="options">
+                  <button type="button" class="btn btn-default">👁</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal"
+                    data-target="#modalSeleccionCategoria">➕</button>
+                  <button type="button" class="btn btn-default">➖</button>
+                  <button type="button" class="btn btn-default">✉</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">
+                </label>
+              </td>
+              <td>Ringo Starr</td>
+              <td>2ºB</td>
+              <td>Responsable 1</td>
+              <td>
+                <div class="btn-group" role="group" aria-label="options">
+                  <button type="button" class="btn btn-default">👁</button>
+                  <button type="button" class="btn btn-default" data-toggle="modal"
+                    data-target="#modalSeleccionCategoria">➕</button>
+                  <button type="button" class="btn btn-default">➖</button>
+                  <button type="button" class="btn btn-default">✉</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <form>
+      <div class="form-row justify-content-end">
+        <button style="margin:7px;" type="submit" id="boton-publicar" class="btn btn-primary disabled">✉ Enviar mensaje a toda la clase</button>
+      </div>
+    </form>
+  
+  <!-- Modal de selección de categorías (lanzado por un botón) -->
+  <div class="modal fade" id="modalSeleccionCategoria" tabindex="-1" role="dialog"
+    aria-labelledby="tituloModalCategorias" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tituloModalCategorias">Añadir Responsable</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="inputTitulo" placeholder="Apellido 1">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="inputTitulo" placeholder="Apellido 2">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="inputTitulo" placeholder="Nombre">
+              </div>
+              <div class="form-group col-md-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Teléfono">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Agregar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>  
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="button-save-cats">Registrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.bundle-4.3.1.js"></script>
+  <script src="js/tinymce.min.js"></script>
+  <script src="js/gb.js" type="module"></script>
+  <script type="text/javascript">
+    tinymce.init({
+      selector: '#inputTextoAnuncio',
+      plugins: ['link image lists table'],
+      toolbar: 'undo redo | bold italic backcolor | alignleft aligncenter alignjustify | bullist numlist outdent indent | image link table | removeformat',
+      menubar: false,
+    });
+    $("#lista-categorias li").click((e) => {
+      // marca como activo (o, si ya lo era, inactivo) el ítem elegido
+      $(e.currentTarget).toggleClass("active");
+    });
+    $("#button-save-cats").click((e) => {
+      // rellena el #inputCategorias con la nueva lista de categorias, compuesta por todas las ahora-activas
+      $("#inputCategorias").val($("#lista-categorias li.active").toArray().map(o => o.id).join(" "));
+    });
+    $("#boton-publicar").click((e) => {
+      let o = {
+        titulo: $("#inputTitulo").val(), 
+        cats: $("#inputCategorias").val(),
+        text: tinymce.activeEditor.getContent()
+      };
+      console.log("Publicando anuncio, beep bop!", o);
+      // esto evita que se envie de verdad (lo cual, en este caso, sólo recargaría la página)
+      e.preventDefault();
+
+    });
+
+  </script>
+
+</body>
+</html>

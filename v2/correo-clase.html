@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap-4.3.1.css">
+
+  <!-- Esto aparece como título de la ventana o pestaña en el navegador: cámbialo -->
+  <title>Garabato</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- nombre del sitio; es un enlace que lleva a la página ppal -->
+    <a class="navbar-brand" href="#">GARABATO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Correo<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Buscar</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="registrar-alumno.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Administrar
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Alumnos y Responsables</a>
+            <a class="dropdown-item" href="#">Clases y Profesores</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- container-fluid expande el contenedor para que ocupe todo el espacio disponible -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-1">
+        <label><h2>Correo</h2></label>
+        <div class="row">
+          <button type="button" class="btn btn-default">➕ Nuevo</button>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-default">📥 Recibido</button>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-default">📤 Enviado</button>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-default">🗃 Archivado</button>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-default">⭐ Favoritos</button>
+        </div>
+      </div>
+
+      <!-- panel lateral, demostrando acordeones (secciones expansibles) -->
+      <div class="col-sm-4">
+
+        <div class="row-sm-4">
+          <label><h4>Recibidos</h4></label>
+          <button type="button" class="btn btn-default"><h4>↻</h4></button>
+          <div class="btn-group justify-content-end" role="group" aria-label="leido">
+            <button type="button" class="btn btn-default">Leido</button>
+            <button type="button" class="btn btn-default">No Leido</button>
+          </div>  
+        </div>
+
+        <div class="row-sm-4">
+          <form action="">
+            <div class="input-group mb-4">
+              <input type="search" placeholder="Buscar mensaje" aria-describedby="button-addon5" class="form-control">
+              <div class="input-group-append">
+                <button id="button-addon5" type="submit" class="btn btn-primary">🔎</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="row-sm-4">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Marcar todo / nada
+            </label>
+            <button type="button" class="btn btn-default">👁</button>
+            <button type="button" class="btn btn-default">🗃</button>
+            <button type="button" class="btn btn-default">⭐</button>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">                
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  Excursión día 11 
+                </button>
+              </h2>
+              <div class="row justify-content-end">
+                <button type="button" class="btn btn-default">↩</button>
+                <button type="button" class="btn btn-default">🗃</button>
+                <button type="button" class="btn btn-default">⭐</button>
+              </div>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Hola, soy el padre de Jaime.
+                Le escribo con motivo de informarle de que Jaime no asistirá a la excursión programada para el día 
+                11 de noviembre porque tiene una cita médica.    
+              </div>
+            </div>           
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Cita sanitaria 13 de diciembre
+                </button>
+              </h2>
+              <div class="row justify-content-end">
+                <button type="button" class="btn btn-default">↩</button>
+                <button type="button" class="btn btn-default">🗃</button>
+                <button type="button" class="btn btn-default">⭐</button>
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Entrega de Actas
+                </button>
+              </h2>
+              <div class="row justify-content-end">
+                <button type="button" class="btn btn-default">↩</button>
+                <button type="button" class="btn btn-default">🗃</button>
+                <button type="button" class="btn btn-default">⭐</button>
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- panel ppal, demostrando un formulario con control de texto y un diálogo modal -->
+      <div class="col-sm-7 anuncio">
+        <label><h4>Nuevo Mensaje</h4></label>
+        <form method="post">
+          <div class="form-col datos-anuncio">
+            <div class="form-group row-md-4">
+              <label for="inputTitulo">Asunto:</label>
+              <input type="text" class="form-control" id="inputTitulo" placeholder="Título del mensaje">
+            </div>
+            <div class="form-group row-md-4">
+              <label for="inputCategorias">Enviar a:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" readonly id="inputCategorias" placeholder="Destinatario(s)">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" data-toggle="modal"
+                    data-target="#modalSeleccionCategoria">Clases</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row texto-anuncio">
+            <div class="form-group col">
+              <label for="inputTextoAnuncio">Mensaje:</label>
+              <textarea id="inputTextoAnuncio" class="form-control" placeholder="Escribe"></textarea>                
+            </div>
+          </div>
+          <!-- botón para enviar el formulario; justify-content-end lo justifica a la derecha -->
+          <div class="form-row justify-content-end">
+            <button style="margin:7px; background-color: red;" type="submit" id="boton-publicar" class="btn btn-primary">🗑 Descartar</button>
+            <button style="margin:7px;" type="submit" id="boton-publicar" class="btn btn-primary">✉ Enviar</button>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal de selección de categorías (lanzado por un botón) -->
+  <div class="modal fade" id="modalSeleccionCategoria" tabindex="-1" role="dialog"
+    aria-labelledby="tituloModalCategorias" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tituloModalCategorias">Selección de Clases</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group" id="lista-categorias">
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="1ºA">
+              1º A
+              <span class="badge badge-primary badge-pill">26</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="1ºB">
+              1º B
+              <span class="badge badge-primary badge-pill">23</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="1ºC">
+              1º C
+              <span class="badge badge-primary badge-pill">25</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="1ºD">
+              1º D
+              <span class="badge badge-primary badge-pill">21</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="2ºA">
+              2º A
+              <span class="badge badge-primary badge-pill">32</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="2ºB">
+              2º B
+              <span class="badge badge-primary badge-pill">27</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="2ºC">
+              2º C
+              <span class="badge badge-primary badge-pill">31</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="2ºD">
+              2º D
+              <span class="badge badge-primary badge-pill">26</span>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="button-save-cats">Guardar y salir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.bundle-4.3.1.js"></script>
+  <script src="js/tinymce.min.js"></script>
+  <script type="text/javascript">
+    tinymce.init({
+      selector: '#inputTextoAnuncio',
+      plugins: ['link image lists table'],
+      toolbar: 'undo redo | bold italic backcolor | alignleft aligncenter alignjustify | bullist numlist outdent indent | image link table | removeformat',
+      menubar: false,
+    });
+    $("#lista-categorias li").click((e) => {
+      // marca como activo (o, si ya lo era, inactivo) el ítem elegido
+      $(e.currentTarget).toggleClass("active");
+    });
+    $("#button-save-cats").click((e) => {
+      // rellena el #inputCategorias con la nueva lista de categorias, compuesta por todas las ahora-activas
+      $("#inputCategorias").val($("#lista-categorias li.active").toArray().map(o => o.id).join(" "));
+    });
+    $("#boton-publicar").click((e) => {
+      let o = {
+        titulo: $("#inputTitulo").val(), 
+        cats: $("#inputCategorias").val(),
+        text: tinymce.activeEditor.getContent()
+      };
+      console.log("Publicando anuncio, beep bop!", o);
+      // esto evita que se envie de verdad (lo cual, en este caso, sólo recargaría la página)
+      e.preventDefault();
+    });
+  </script>
+</body>
+
+</html>
